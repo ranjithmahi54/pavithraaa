@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy birthday pavi ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#08030d;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* ================= BACKGROUND ================= */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-5;
+    background:
+        radial-gradient(circle at 20% 20%,rgba(255,60,120,.18),transparent 30%),
+        radial-gradient(circle at 80% 70%,rgba(150,70,255,.18),transparent 30%),
+        linear-gradient(135deg,#08030d,#170817,#09030e);
+}
+
+/* Stars */
+
+.star{
+    position:fixed;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    opacity:.7;
+    animation:twinkle 3s infinite alternate;
+    z-index:-2;
+}
+
+@keyframes twinkle{
+    from{opacity:.2;transform:scale(.7)}
+    to{opacity:1;transform:scale(1.4)}
+}
+
+/* ================= OPENING ================= */
+
+#intro{
+    position:fixed;
+    inset:0;
+    z-index:1000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+        radial-gradient(circle,#35102e,#09030d 70%);
+    transition:1.2s ease;
+}
+
+#intro.hide{
+    opacity:0;
+    pointer-events:none;
+    transform:scale(1.1);
+}
+
+.intro-content{
+    width:90%;
+    max-width:600px;
+}
+
+.intro-small{
+    font-size:13px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    opacity:.7;
+}
+
+.intro-title{
+    font-family:'Great Vibes',cursive;
+    font-size:clamp(55px,12vw,100px);
+    margin:15px 0;
+}
+
+.intro-text{
+    font-size:16px;
+    line-height:1.8;
+    color:#ddd;
+}
+
+.gift-box{
+    width:120px;
+    height:100px;
+    margin:35px auto;
+    position:relative;
+    cursor:pointer;
+    animation:giftFloat 2s infinite ease-in-out;
+}
+
+.gift-body{
+    position:absolute;
+    width:100%;
+    height:75px;
+    bottom:0;
+    border-radius:8px;
+    background:linear-gradient(135deg,#ff4f81,#b71958);
+    box-shadow:0 20px 50px rgba(255,30,100,.35);
+}
+
+.gift-lid{
+    position:absolute;
+    width:110%;
+    height:25px;
+    top:5px;
+    left:-5%;
+    border-radius:7px;
+    background:#ff719b;
+}
+
+.gift-ribbon{
+    position:absolute;
+    width:18px;
+    height:100%;
+    left:50%;
+    transform:translateX(-50%);
+    background:#ffd1df;
+}
+
+.gift-bow{
+    position:absolute;
+    top:-25px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:45px;
+}
+
+@keyframes giftFloat{
+    0%,100%{transform:translateY(0) rotate(0)}
+    50%{transform:translateY(-15px) rotate(2deg)}
+}
+
+.open-btn{
+    border:1px solid rgba(255,255,255,.3);
+    padding:15px 30px;
+    border-radius:50px;
+    background:rgba(255,255,255,.08);
+    color:white;
+    cursor:pointer;
+    font-size:14px;
+    letter-spacing:2px;
+    backdrop-filter:blur(10px);
+    transition:.3s;
+}
+
+.open-btn:hover{
+    background:white;
+    color:#a51d59;
+    transform:scale(1.05);
+}
+
+/* ================= MAIN ================= */
+
+section{
+    min-height:100vh;
+    padding:100px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.container{
+    width:100%;
+    max-width:1000px;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+}
+
+.eyebrow{
+    font-size:12px;
+    letter-spacing:6px;
+    text-transform:uppercase;
+    color:#f5a8c2;
+}
+
+.hero h1{
+    font-family:'Great Vibes',cursive;
+    font-size:clamp(70px,13vw,150px);
+    line-height:1;
+    margin:20px 0;
+    background:linear-gradient(90deg,#fff,#ff9abb,#fff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero h2{
+    font-size:clamp(20px,4vw,34px);
+    font-weight:400;
+}
+
+.hero p{
+    max-width:650px;
+    margin:30px auto;
+    line-height:1.9;
+    color:#d6cdd6;
+}
+
+.scroll{
+    margin-top:60px;
+    font-size:11px;
+    letter-spacing:4px;
+    opacity:.6;
+}
+
+/* ================= PHOTO ================= */
+
+.photo-section{
+    background:rgba(255,255,255,.015);
+}
+
+.section-title{
+    font-family:'Great Vibes',cursive;
+    font-size:65px;
+    margin-bottom:15px;
+}
+
+.section-subtitle{
+    color:#aaa;
+    margin-bottom:50px;
+}
+
+.photo-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.photo{
+    height:400px;
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+    background:#241021;
+    border:1px solid rgba(255,255,255,.1);
+    transform:rotate(-2deg);
+    transition:.5s;
+}
+
+.photo:nth-child(2){
+    transform:rotate(2deg) translateY(20px);
+}
+
+.photo:nth-child(3){
+    transform:rotate(-1deg);
+}
+
+.photo:hover{
+    transform:rotate(0) scale(1.04);
+    z-index:3;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.photo-placeholder{
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:15px;
+    color:#aaa;
+    padding:20px;
+}
+
+.photo-placeholder span{
+    font-size:50px;
+}
+
+/* ================= LETTER ================= */
+
+.letter-box{
+    max-width:750px;
+    margin:auto;
+    padding:50px 40px;
+    border-radius:30px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    backdrop-filter:blur(15px);
+    box-shadow:0 30px 100px rgba(0,0,0,.3);
+}
+
+.letter-box h3{
+    font-family:'Great Vibes',cursive;
+    font-size:55px;
+    color:#ff9fbd;
+    margin-bottom:25px;
+}
+
+#typing{
+    font-size:17px;
+    line-height:2;
+    color:#ddd;
+    min-height:260px;
+}
+
+.cursor{
+    display:inline-block;
+    width:2px;
+    height:20px;
+    background:#ff86ae;
+    animation:blink .8s infinite;
+}
+
+@keyframes blink{
+    50%{opacity:0}
+}
+
+/* ================= WISHES ================= */
+
+.wishes{
+    min-height:80vh;
+}
+
+.wish-card{
+    max-width:800px;
+    margin:auto;
+}
+
+.wish-card h2{
+    font-family:'Great Vibes',cursive;
+    font-size:80px;
+    background:linear-gradient(90deg,#ff9abb,#fff,#ff9abb);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.wish-card p{
+    margin:30px auto;
+    max-width:650px;
+    line-height:2;
+    color:#d8d0d8;
+}
+
+/* ================= FINAL ================= */
+
+.final{
+    position:relative;
+    min-height:100vh;
+    overflow:hidden;
+}
+
+.final h1{
+    font-family:'Great Vibes',cursive;
+    font-size:clamp(70px,13vw,140px);
+}
+
+.final p{
+    margin:20px;
+    color:#bbb;
+}
+
+.final-heart{
+    font-size:70px;
+    animation:heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat{
+    0%,100%{transform:scale(1)}
+    25%{transform:scale(1.2)}
+    40%{transform:scale(1)}
+    60%{transform:scale(1.15)}
+}
+
+/* ================= MUSIC ================= */
+
+.music-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.2);
+    background:rgba(20,10,20,.8);
+    color:white;
+    cursor:pointer;
+    z-index:500;
+    backdrop-filter:blur(10px);
+}
+
+/* ================= FLOATING HEARTS ================= */
+
+.heart{
+    position:fixed;
+    bottom:-50px;
+    pointer-events:none;
+    z-index:200;
+    animation:heartFloat linear forwards;
+}
+
+@keyframes heartFloat{
+    0%{
+        transform:translateY(0) scale(.5);
+        opacity:0;
+    }
+    15%{
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-110vh) translateX(var(--move)) scale(1.3);
+        opacity:0;
+    }
+}
+
+/* ================= CONFETTI ================= */
+
+.confetti{
+    position:fixed;
+    top:-30px;
+    z-index:900;
+    pointer-events:none;
+    animation:confettiFall linear forwards;
+}
+
+@keyframes confettiFall{
+    to{
+        transform:translateY(110vh) rotate(720deg);
+        opacity:0;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:700px){
+
+    section{
+        padding:80px 18px;
+    }
+
+    .photo-grid{
+        grid-template-columns:1fr;
+    }
+
+    .photo{
+        height:450px;
+        transform:none!important;
+    }
+
+    .letter-box{
+        padding:35px 22px;
+    }
+
+    #typing{
+        font-size:15px;
+    }
+
+    .section-title{
+        font-size:55px;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+
+<!-- ================= INTRO ================= -->
+
+<div id="intro">
+
+    <div class="intro-content">
+
+        <div class="intro-small">
+            A little surprise for you kutyy...
+        </div>
+
+        <h1 class="intro-title">
+            Something Special
+        </h1>
+
+        <p class="intro-text">
+            There's a beautiful reason to celebrate today...
+            <br>
+            Tap the gift and discover it. ❤️
+        </p>
+
+        <div class="gift-box" onclick="openGift()">
+
+            <div class="gift-bow">🎀</div>
+
+            <div class="gift-lid"></div>
+
+            <div class="gift-body">
+                <div class="gift-ribbon"></div>
+            </div>
+
+        </div>
+
+        <button class="open-btn" onclick="openGift()">
+            OPEN YOUR SURPRISE ✨
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= STARS ================= -->
+
+<script>
+
+for(let i=0;i<100;i++){
+
+    const star=document.createElement("div");
+
+    star.className="star";
+
+    star.style.left=Math.random()*100+"vw";
+    star.style.top=Math.random()*100+"vh";
+
+    star.style.animationDelay=Math.random()*3+"s";
+
+    document.body.appendChild(star);
+
+}
+
+</script>
+
+
+<!-- ================= MUSIC ================= -->
+
+<audio id="music" loop>
+
+    <!-- Replace with your own music file -->
+
+    <source src="music.mp3.mp3" type="audio/mpeg">
+
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()" id="musicBtn">
+    🎵
+</button>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="eyebrow">
+            Today is your special day
+        </div>
+
+        <h1>
+            Happy Birthday kutty ma 
+        </h1>
+
+        <!-- Kutty ma -->
+
+        <h2>
+            Dear <strong>Pavi kutty </strong> ❤️
+        </h2>
+
+        <p>
+            Today the world celebrates another beautiful year
+            of your life. May this new chapter bring you
+            countless reasons to smile, dream and be happy.
+        </p>
+
+        <div class="scroll">
+            ↓ SCROLL TO DISCOVER YOUR SURPRISE ↓
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MEMORIES ================= -->
+
+<section class="photo-section">
+
+    <div class="container">
+
+        <div class="eyebrow">
+            Little moments
+        </div>
+
+        <h2 class="section-title">
+            Beautiful Memories
+        </h2>
+
+        <p class="section-subtitle">
+            Every picture has a story. 📸
+        </p>
+
+
+        <div class="photo-grid">
+
+            <!--pto1.jpg -->
+
+            <div class="photo">
+
+                <div class="photo-placeholder">
+
+                    <span>📸</span>
+
+                    <p>
+                        Add your favorite photo her
+                    </p><img src="a3.jpg.jpg">
+
+                </div>
+
+            </div>
+
+
+            <div class="photo">
+
+                <div class="photo-placeholder">
+
+                    <span>❤️</span>
+
+                    <p>
+                        A beautiful memory
+                    </p><img src="a1.jpg.jpg">
+
+                </div>
+
+            </div>
+
+
+            <div class="photo">
+
+                <div class="photo-placeholder">
+
+                    <span>✨</span>
+
+                    <p>
+                        One more special moment
+                    </p>
+                    <img src="a6.jpg">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LETTER ================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="eyebrow">
+            From my heart
+        </div>
+
+        <h2 class="section-title">
+            A Little Letter
+        </h2>
+
+        <div class="letter-box">
+
+            <h3>
+                Dear Kuttyma ❤️
+            </h3>
+
+            <div id="typing"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WISHES ================= -->
+
+<section class="wishes">
+
+    <div class="container wish-card">
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+        <h2>
+            My Birthday Wish
+        </h2>
+
+        <p>
+            I hope you always have a reason to smile,
+            someone to make you laugh, and dreams that
+            make your heart excited.
+
+            <br><br>
+
+            pavi kutty Always You happy ah irukanum... porumaiya.. clam ah... irukanum....then last year sonna matiri always smile
+            dont fear... strong bold only.. ok vaa
+
+            <br><br>
+
+            And most importantly...
+
+            <br>
+
+            <strong>
+                Start our year... we dreams achive to Succuss...I stay with you.... one more time my wish..... Happppyyyy birth di kutty maaaaaaaa 😘✨
+            </strong>
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FINAL ================= -->
+
+<section class="final">
+
+    <div class="container">
+
+        <div class="eyebrow">
+            One last thing...
+        </div>
+
+        <div class="final-heart">
+            💖
+        </div>
+
+        <h1>
+            Happy Birthday Kutty maa 😘🫂
+        </h1>
+
+        <p>
+            With lots of love,
+        </p>
+
+        <!-- KUTTY MAA😘🫂 -->
+
+        <h2>
+            Rapav❤️
+        </h2>
+
+        <p style="margin-top:50px;">
+            Make a wish... 🎂
+        </p>
+
+    </div>
+
+</section>
+
+
+<script>
+
+/* ================= OPEN GIFT ================= */
+
+function openGift(){
+
+    document.getElementById("intro").classList.add("hide");
+
+    setTimeout(()=>{
+
+        document.getElementById("intro").style.display="none";
+
+        startMusic();
+
+        createConfetti();
+
+        createHearts();
+
+    },1000);
+
+}
+
+
+/* ================= MUSIC ================= */
+
+let music=document.getElementById("music");
+let playing=false;
+
+function startMusic(){
+
+    music.play()
+    .then(()=>{
+        playing=true;
+        document.getElementById("musicBtn").innerHTML="🔊";
+    })
+    .catch(()=>{
+        console.log("Music needs user interaction.");
+    });
+
+}
+
+function toggleMusic(){
+
+    if(playing){
+
+        music.pause();
+
+        playing=false;
+
+        document.getElementById("musicBtn").innerHTML="🎵";
+
+    }else{
+
+        music.play();
+
+        playing=true;
+
+        document.getElementById("musicBtn").innerHTML="🔊";
+
+    }
+
+}
+
+
+/* ================= TYPING LETTER ================= */
+
+const message = `
+There are some people who make ordinary moments
+feel a little more special.
+
+And today, I just want to remind you how wonderful
+you are.
+
+I hope this birthday opens the door to a year filled
+with happiness, beautiful surprises, peaceful days,
+big dreams and unforgettable memories.
+
+Keep smiling.
+
+Keep believing in yourself.
+
+Keep chasing the things that make your heart happy.
+
+No matter where life takes you, I hope you always
+remember that you deserve every beautiful thing
+coming your way.
+
+Happy Birthday, Pavithraa. ❤️
+
+May your smile always be brighter than the stars
+and your heart always be full of happiness.
+
+Have the most beautiful birthday ever. 🎂✨
+`;
+
+let index=0;
+
+function typeMessage(){
+
+    if(index < message.length){
+
+        document.getElementById("typing").innerHTML +=
+            message.charAt(index);
+
+        index++;
+
+        setTimeout(typeMessage,35);
+
+    }
+
+}
+
+setTimeout(typeMessage,3000);
+
+
+/* ================= HEARTS ================= */
+
+function createHearts(){
+
+    setInterval(()=>{
+
+        const heart=document.createElement("div");
+
+        heart.className="heart";
+
+        heart.innerHTML=
+            ["❤️","💕","💖","💗","✨"][Math.floor(Math.random()*5)];
+
+        heart.style.left=Math.random()*100+"vw";
+
+        heart.style.fontSize=
+            (15+Math.random()*25)+"px";
+
+        heart.style.animationDuration=
+            (5+Math.random()*5)+"s";
+
+        heart.style.setProperty(
+            "--move",
+            (Math.random()*200-100)+"px"
+        );
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>{
+            heart.remove();
+        },10000);
+
+    },600);
+
+}
+
+
+/* ================= CONFETTI ================= */
+
+function createConfetti(){
+
+    const symbols=[
+        "🎉",
+        "🎊",
+        "✨",
+        "💖",
+        "💕",
+        "🌸",
+        "⭐",
+        "🎈"
+    ];
+
+    for(let i=0;i<100;i++){
+
+        const item=document.createElement("div");
+
+        item.className="confetti";
+
+        item.innerHTML=
+            symbols[Math.floor(Math.random()*symbols.length)];
+
+        item.style.left=
+            Math.random()*100+"vw";
+
+        item.style.fontSize=
+            (15+Math.random()*25)+"px";
+
+        item.style.animationDuration=
+            (2+Math.random()*4)+"s";
+
+        item.style.animationDelay=
+            Math.random()*1.5+"s";
+
+        document.body.appendChild(item);
+
+        setTimeout(()=>{
+            item.remove();
+        },6000);
+
+    }
+
+}
+
+
+/* ================= FINAL CELEBRATION ================= */
+
+window.addEventListener("scroll",()=>{
+
+    const finalSection=
+        document.querySelector(".final");
+
+    const rect=
+        finalSection.getBoundingClientRect();
+
+    if(rect.top < window.innerHeight*.7 &&
+       rect.bottom > 0){
+
+        if(!finalSection.dataset.done){
+
+            finalSection.dataset.done="true";
+
+            createConfetti();
+
+            setTimeout(createConfetti,1500);
+
+        }
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
